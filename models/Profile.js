@@ -18,7 +18,7 @@ const ProfileSchema = new mongoose.Schema({
         type: String,
         required:true
     },
-    fileds: {
+    specialities: {
         type: [String],
         required:true
     },
