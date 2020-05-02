@@ -34,6 +34,7 @@ const AddEducation = ({ addEducation,history }) => {
           addEducation(formData, history);
       }}>
         <div className="form-group">
+
           <input 
             type="text" 
             placeholder="* School" 
@@ -74,7 +75,7 @@ const AddEducation = ({ addEducation,history }) => {
                 setFormData({...formData, current: !current});
                 toggleDisabled(!toDateDisabled)
             }}
-            /> {' '}Current Job</p>
+            /> {' '}Current School</p>
         </div>
         <div className="form-group">
           <h4>To Date</h4>

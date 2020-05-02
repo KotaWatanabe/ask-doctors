@@ -46,7 +46,7 @@ const AddExperience = ({ addExperience,history }) => {
           <input 
             type="text" 
             placeholder="* hospital" 
-            name="Hospital" 
+            name="hospital" 
             value={hospital}
             onChange={e => onChange(e)}
             required />
