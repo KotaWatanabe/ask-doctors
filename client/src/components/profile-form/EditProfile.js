@@ -25,7 +25,7 @@ const EditProfile = ({ profile: { profile, loading },createProfile, getCurrentPr
             specialities: loading || !profile.specialities ? '' : profile.specialities.join(','),
             bio: loading || !profile.bio ? '' : profile.bio,
         })
-    }, [loading]);
+    }, [loading, getCurrentProfile]);
 
     const {
         hospital,
