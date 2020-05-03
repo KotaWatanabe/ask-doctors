@@ -7,16 +7,15 @@ import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 import Alert from './components/layout/Alert';
 import Dashboard from './components/dashboard/Dashboard';
-import PrivateRoute from './components/routing/PrivateRoute';
+import PrivateRoute from './components/routing/PrivateRoute'
 import CreateProfile from './components/profile-form/CreateProfile';
 import EditProfile from './components/profile-form/EditProfile';
 import AddExperience from './components/profile-form/AddExperience';
 import AddEducation from './components/profile-form/AddEducation';
 import Profiles from './components/profiles/Profiles';
-import Profile from './components/profiles/Profile';
+import Profile from './components/profile/Profile';
 import Posts from './components/posts/Posts';
-import Post from './components/posts/Post';
-
+import Post from './components/post/Post';
 //Redux
 import { Provider } from 'react-redux';
 import store from './store';
@@ -59,7 +58,5 @@ const App = () => {
     </Provider>
   )
 }
-
-
 
 export default App;
