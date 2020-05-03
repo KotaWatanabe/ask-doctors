@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Moment from 'react-moment';
 import { connect } from 'react-redux';
-import { addLike, removeLike } from '../../actions/post';
+import { addLike, removeLike, deletePost } from '../../actions/post';
 import avatar from  '../../img/doctor-avatar.png'
 
-const PostItem = ({addLike, removeLike, auth, 
+const PostItem = ({addLike, removeLike, deletePost,auth, 
     post: {
         _id,
         text,
@@ -66,7 +66,11 @@ PostItem.propTypes = {
 }
 
 const mapStateToProps = state => ({
-    auth: state.auth
+    auth: state.auth,
+    addLike:PropTypes.func.isRequired,
+    removeLike:PropTypes.func.isRequired,
+    deletePost:PropTypes.func.isRequired,
+    post: PropTypes.object.isRequired
 })
 
-export default connect(mapStateToProps,{ addLike, removeLike })(PostItem);
+export default connect(mapStateToProps,{ addLike, removeLike, deletePost })(PostItem);
